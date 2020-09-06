@@ -8,18 +8,29 @@
     <artifactId>chenx-spring-boot-starter</artifactId>
     <version>1.0-RELEASE</version>
 
+    <parent>
+        <groupId>com.chenx</groupId>
+        <artifactId>chenx-spring-boot-parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
     <dependencies>
         <dependency>
             <groupId>com.chenx</groupId>
             <artifactId>chenx-spring-boot-autoconfigure</artifactId>
-            <version>0.0.1-RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chenx</groupId>
+            <artifactId>chenx-spring-boot-common</artifactId>
         </dependency>
     </dependencies>
 
     <distributionManagement>
         <repository>
             <id>maven-release</id>
-            <url>file:/Users/chenxiaowei/.m2/repository-git/repository</url>
+            <url>${local.repository}</url>
         </repository>
     </distributionManagement>
+
 </project>
