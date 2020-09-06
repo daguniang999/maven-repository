@@ -16,6 +16,12 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
+    <modules>
+        <module>../chenx-spring-boot-common</module>
+        <module>../chenx-spring-boot-autoconfigure</module>
+        <module>../chenx-spring-boot-starter</module>
+    </modules>
+
     <properties>
         <autoconfigure.version>0.0.1-RELEASE</autoconfigure.version>
         <common.version>1.0-RELEASE</common.version>
